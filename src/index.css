@@ -1,0 +1,30 @@
+:root {
+  --bg-dark: #020617;
+  --primary: #26D0F5;
+  --primary-light: #7761D1;
+  --primary-hover: #8b5cf6;
+  --text-light: #e4e6ec;
+  --text-gray: #94a3b8;
+  --white: #ffffff;
+  --glass-bg: rgba(2, 6, 23, 0.8);
+  --card-bg: rgba(30, 41, 59, 0.5);
+  --border-light: rgba(255, 255, 255, 0.05);
+}
+
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  color: var(--white);
+  overflow-x: hidden; /* Evita barras de rolagem horizontais indesejadas */
+  background: var(--bg-dark); /* Cor de fallback caso o canvas demore a carregar */
+}
+
+.galaxy-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1; 
+  pointer-events: none;
+}

@@ -1,0 +1,93 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  background: rgba(2, 6, 23, 0.6); /* Mais translúcido para destacar o blur */
+  -webkit-backdrop-filter: blur(12px);
+  backdrop-filter: blur(12px);    /* Efeito de vidro */
+  z-index: 1000;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+}
+
+.header-container {
+  max-width: 1500px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 40px;
+  display: flex;
+  justify-content: space-between; /* Logo na esquerda, Nav na direita */
+  align-items: center;
+}
+
+.header nav {
+  display: flex;
+  gap: 32px;
+}
+
+.header nav a {
+  text-decoration: none;
+  color: var(--text-light);
+  font-size: 1rem;
+  font-weight: 500;
+  opacity: 0.8;
+  transition: opacity 0.3s, color 0.3s;
+  position: relative;
+}
+
+/* Efeito de sublinhado animado */
+.header nav a::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -4px;
+  left: 50%;
+  background: var(--primary);
+  transition: width 0.3s ease, left 0.3s ease;
+  box-shadow: 0 0 8px var(--primary);
+}
+
+.header nav a:hover {
+  opacity: 1;
+  color: var(--white);
+  text-shadow: 0 0 10px rgba(99, 102, 241, 0.5);
+}
+
+.header nav a:hover::after {
+  width: 100%;
+  left: 0;
+}
+
+.logo {
+  font-size: 1.3rem;
+  font-weight: 600;
+  background: linear-gradient(90deg, var(--primary), var(--primary-light));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.logo:hover {
+  transform: scale(1.05);
+  filter: drop-shadow(0 0 8px rgba(99, 102, 241, 0.3));
+}
+
+@media (max-width: 768px) {
+  .header-container {
+    padding: 0 20px;
+  }
+
+  .header nav {
+    gap: 20px;
+  }
+
+  .header nav a {
+    font-size: 0.9rem;
+  }
+}
