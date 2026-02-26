@@ -1,13 +1,17 @@
 import "./Projects.css";
-
+import quiz from "../assets/quiz.jpeg";
+import store from "../assets/store-system.jpeg";
+import guilinks from "../assets/guilinks.jpeg";
+import fisiosystem from "../assets/fisiosystem.jpeg";
+import toDoList from "../assets/to-do-list.jpeg";
 
 export default function Projects() {
   const projects = [
-    { id: 1, title: "Projeto TO-DO-LIST", tech: "HTML • CSS • JavaScript", desc: "Lista de tarefas com CRUD completo.", img: "./src/assets/to-do-list.jpeg", github: "https://github.com/guialmeida10/to-do-list", link: "https://guialmeida10.github.io/to-do-list /" },
-    { id: 2, title: "Projeto Quiz Futebol", tech: "HTML • CSS • JavaScript", desc: "Quiz de Futebol com perguntas e respostas.", img: "./src/assets/quiz.jpeg", github: "https://github.com/guialmeida10/Quiz-Futebol", link: "https://guialmeida10.github.io/Quiz-Futebol/" },
-    { id: 3, title: "Projeto Store-System", tech: "React.js • Node.js • MySQL", desc: "Tela de login e CRUD de produtos.", img: "./src/assets/store-system.jpeg", github: "https://github.com/guialmeida10/store-system", link: "https://guialmeida10.github.io/store-system/" },
-    { id: 4, title: "Projeto GuiLinks", tech: "React.js • Node.js • MySQL", desc: "Árvore de links ", img: "./src/assets/guilinks.jpeg", github: "https://github.com/guialmeida10/GuiLinks", link: "https://guialmeida10.github.io/GuiLinks/" },
-    { id: 5, title: "Projeto Fisio System", tech: "React.js • Node.js • MySQL", desc: "Aplicação de músicas com React.", img: "./src/assets/trybetunes.jpeg", github: "https://github.com/guialmeida10/trybetunes", link: "https://guialmeida10.github.io/trybetunes/" }
+    { id: 1, title: "Projeto TO-DO-LIST", tech: "HTML • CSS • JavaScript", desc: "Lista de tarefas com CRUD completo.", img: toDoList, github: "https://github.com/guialmeida10/to-do-list", link: "https://guialmeida10.github.io/to-do-list /" },
+    { id: 2, title: "Projeto Quiz Futebol", tech: "HTML • CSS • JavaScript", desc: "Quiz de Futebol com perguntas e respostas.", img: quiz, github: "https://github.com/guialmeida10/Quiz-Futebol", link: "https://guialmeida10.github.io/Quiz-Futebol/" },
+    { id: 3, title: "Projeto Store-System", tech: "React.js • Node.js • MySQL", desc: "Tela de login e CRUD de produtos.", img: store, github: "https://github.com/guialmeida10/store-system", link: "https://guialmeida10.github.io/store-system/" },
+    { id: 4, title: "Projeto GuiLinks", tech: "React.js • Node.js • MySQL", desc: "Árvore de links ", img: guilinks, github: "https://github.com/guialmeida10/GuiLinks", link: "https://guialmeida10.github.io/GuiLinks/" },
+    { id: 5, title: "Projeto Fisio System", tech: "React.js • Node.js • MySQL", desc: "Sistema de Fisioterapia completo", img: fisiosystem, github: "https://github.com/guialmeida10/fisiosystem", link: "https://guialmeida10.github.io/fisiosystem/" }
   ];
 
   return (

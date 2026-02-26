@@ -1,4 +1,5 @@
 import "./Home.css";
+import guig from "../assets/guig.jpeg";
 import { motion } from "framer-motion";
 import { FaGithub, FaLinkedin, FaDownload } from "react-icons/fa";
 
@@ -69,7 +70,7 @@ export default function Home() {
         >
           <div className="image-wrapper">
             <div className="image-border">
-              <img src="./src/assets/guig.jpeg" alt="Guilherme Almeida" className="home-img" />
+              <img src={guig} alt="Guilherme Almeida" className="home-img" />
             </div>
             
             {/* Elemento flutuante (Card Projetos) */}
