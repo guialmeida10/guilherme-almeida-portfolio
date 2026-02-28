@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import "./Header.css";
+import icon from "../assets/icon.png";
 export default function Header() {
   return (
     <motion.header
@@ -9,7 +10,7 @@ export default function Header() {
       transition={{ duration: 0.8, ease: "easeOut" }}
     >
       <div className="header-container">
-        <h2 className="logo">Guilherme Almeida</h2>
+        <h2 className="logo"><img src={icon} alt="Guilherme Almeida" />Guilherme Almeida</h2>
         <nav>
           <a href="#home">Home</a>
           <a href="#projects">Projetos</a>

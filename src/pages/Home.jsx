@@ -5,8 +5,8 @@ import { FaGithub, FaLinkedin, FaDownload } from "react-icons/fa";
 
 export default function Home() {
   const techs = [
-    "React", "Node.js", "JavaScript", "TypeScript", "CSS3", "HTML5", 
-    "Three.js", "Git", "Next.js", "Tailwind"
+    "React", "Node.js", "JavaScript", "CSS3", "HTML5", 
+    "Java", "C/C++", "MySQL", "PostgreSQL", "Redes"
   ];
 
   return (
@@ -83,7 +83,6 @@ export default function Home() {
             </motion.div>
           </div>
 
-          {/* LISTA DE TECNOLOGIAS (Debaixo da imagem) */}
           <div className="tech-list">
             {techs.map((tech, index) => (
               <motion.span 

@@ -39,7 +39,7 @@ export default function Contact() {
           action="https://formspree.io/f/maqdvaaz"
           method="POST"
         >
-          <input type="hidden" name="_next" value="http://localhost:5173/" />
+          <input type="hidden" name="_next" value="https://guilherme-almeida-portfolio.vercel.app/" />
           <div className="input-group">
             {/* O Formspree usa o atributo 'name' para identificar os dados no e-mail */}
             <input type="text" name="name" placeholder="Seu nome" required />

@@ -71,11 +71,22 @@
   -webkit-text-fill-color: transparent;
   cursor: pointer;
   transition: transform 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
 }
 
 .logo:hover {
   transform: scale(1.05);
   filter: drop-shadow(0 0 8px rgba(99, 102, 241, 0.3));
+}
+
+.logo img {
+  width: auto;
+  height: 46px;
+  border-radius: 50%;
+  transition: transform 0.3s ease;
+  vertical-align: middle;
 }
 
 @media (max-width: 768px) {
@@ -91,3 +102,12 @@
     font-size: 0.9rem;
   }
 }
+
+@media (max-width: 480px) {
+  .logo {
+    font-size: 0.9rem;
+  }
+  .logo img {
+    height: 36px;
+  }
+}  
