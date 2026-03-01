@@ -6,7 +6,7 @@ import { FaGithub, FaLinkedin, FaDownload } from "react-icons/fa";
 export default function Home() {
   const techs = [
     "React", "Node.js", "JavaScript", "CSS3", "HTML5", 
-    "Java", "C/C++", "MySQL", "PostgreSQL", "Redes"
+    "Python", "Java", "C/C++", "MySQL", "PostgreSQL", "Redes"
   ];
 
   return (
@@ -29,7 +29,7 @@ export default function Home() {
           </p>
 
           <div className="home-btns">
-            <button className="btn-primary">
+            <a href="#projects" className="btn-primary">
               <strong>VER PROJETOS</strong>
               <div id="container-stars">
                 <div id="stars"></div>
@@ -40,7 +40,7 @@ export default function Home() {
                   <div className="circle"></div>
                 </div>
               </div>
-            </button>
+            </a>
             <motion.a 
               whileHover={{ scale: 1.05 }} 
               className="btn-secondary" 

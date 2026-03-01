@@ -216,6 +216,14 @@ strong {
   transform: translateY(-3px);
 }
 
+.btn-primary,
+.btn-primary strong,
+.btn-primary:after,
+.btn-primary:before {
+  text-decoration: none;
+  box-shadow: none;
+}
+
 /* --- ÍCONES SOCIAIS --- */
 .home-social {
   display: flex;
