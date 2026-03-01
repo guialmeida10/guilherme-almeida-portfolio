@@ -19,16 +19,16 @@ export default function Contact() {
               <FaEnvelope className="info-icon" />
               <div>
                 <span>E-mail</span>
-                <p>guiwork09@exemplo.com</p>
+                <p>guiwork09@gmail.com</p>
               </div>
             </div>
           </div>
 
           <div className="social-links">
-            <a href="#" className="social-icon">
+            <a href="https://www.linkedin.com/in/guilherme-almeida-192621314/" target="_blank" rel="noopener noreferrer" className="social-icon">
               <FaLinkedin />
             </a>
-            <a href="#" className="social-icon">
+            <a href="https://github.com/guialmeida10" target="_blank" rel="noopener noreferrer" className="social-icon">
               <FaGithub />
             </a>
           </div>
