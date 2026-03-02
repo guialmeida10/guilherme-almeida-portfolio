@@ -7,11 +7,11 @@ import toDoList from "../assets/to-do-list.jpeg";
 
 export default function Projects() {
   const projects = [
-    { id: 1, title: "Projeto TO-DO-LIST", tech: "HTML • CSS • JavaScript", desc: "Lista de tarefas com CRUD completo.", img: toDoList, github: "https://github.com/guialmeida10/to-do-list", link: "https://guialmeida10.github.io/to-do-list /" },
+    { id: 1, title: "Projeto TO-DO-LIST", tech: "HTML • CSS • JavaScript", desc: "Lista de tarefas com CRUD completo.", img: toDoList, github: "https://github.com/guialmeida10/to-do-list", link: "https://guialmeida10.github.io/to-do-list/" },
     { id: 2, title: "Projeto Quiz Futebol", tech: "HTML • CSS • JavaScript", desc: "Quiz de Futebol com perguntas e respostas.", img: quiz, github: "https://github.com/guialmeida10/Quiz-Futebol", link: "https://guialmeida10.github.io/Quiz-Futebol/" },
     { id: 3, title: "Projeto Store-System", tech: "React.js • Node.js • MySQL", desc: "Tela de login e CRUD de produtos.", img: store, github: "https://github.com/guialmeida10/store-system", link: "https://guialmeida10.github.io/store-system/" },
-    { id: 4, title: "Projeto GuiLinks", tech: "React.js • Node.js • MySQL", desc: "Árvore de links ", img: guilinks, github: "https://github.com/guialmeida10/GuiLinks", link: "https://guialmeida10.github.io/GuiLinks/" },
-    { id: 5, title: "Projeto Fisio System", tech: "React.js • Node.js • MySQL", desc: "Sistema de Fisioterapia completo", img: fisiosystem, github: "https://github.com/guialmeida10/fisiosystem", link: "https://guialmeida10.github.io/fisiosystem/" }
+    { id: 4, title: "Projeto GuiLinks", tech: "HTML • CSS • JavaScript", desc: "Árvore de links. ", img: guilinks, github: "https://github.com/guialmeida10/GuiLinks", link: "https://guialmeida10.github.io/GuiLinks/" },
+    { id: 5, title: "Projeto Fisio System", tech: "React.js • Node.js • PostgreSQL", desc: "Sistema de Fisioterapia completo com deploy.", img: fisiosystem, github: "Projeto privado", link: "https://fisiosystem.vercel.app/login" }
   ];
 
   return (
@@ -31,7 +31,11 @@ export default function Projects() {
                 <h3>{project.title}</h3>
                 <p>{project.desc}</p>
                 <div className="project-links">
+                  {project.github === "Projeto privado" ? (
+                    <span className="private-repo">{project.github}</span>
+                  ) : (
                   <a href={project.github} target="_blank" rel="noopener noreferrer">GitHub</a>
+                  )}
                   <a href={project.link} target="_blank" rel="noopener noreferrer" className="btn-demo">Live Demo</a>
                 </div>
               </div>
