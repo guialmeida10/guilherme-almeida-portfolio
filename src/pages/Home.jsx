@@ -25,7 +25,7 @@ export default function Home() {
           <h2>Desenvolvedor FullStack</h2>
           <p>
             Transformando ideias em experiências digitais de alto impacto. 
-            Especialista em React e interfaces modernas.
+            Entusiasta em Desenvolvimento Web e aplicações modernas.
           </p>
 
           <div className="home-btns">

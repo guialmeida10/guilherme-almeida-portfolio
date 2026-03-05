@@ -198,21 +198,26 @@ strong {
   color: white;
   border-radius: 5rem;
   border: 2px solid #6366f1;
+  box-shadow: 0 0 30px #6366f1, 0 0 10px #6366f1;
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 10px;
   cursor: pointer;
+  font-family: "Orbitron", sans-serif;
+  font-size: 0.9rem;
   font-weight: 600;
   text-decoration: none;
-  transition: all 0.3s ease-in-out;
+  transition: transform 0.2s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.2s ease-in-out;
+  will-change: transform;
+  transform: translateZ(0);
 }
 
 .btn-secondary:hover {
   color: var(--white);
-  border-color: var(--primary-light);
+  border-color: #6366f1;
   background: rgba(99, 102, 241, 0.1);
-  box-shadow: 0 0 40px #6366f1;
+  box-shadow: 0 0 40px #6366f1, 0 0 15px #6366f1;
   transform: translateY(-3px);
 }
 
@@ -224,7 +229,7 @@ strong {
   box-shadow: none;
 }
 
-/* --- ÍCONES SOCIAIS --- */
+/* ÍCONES SOCIAIS */
 .home-social {
   display: flex;
   gap: 25px;
@@ -252,16 +257,15 @@ strong {
   filter: drop-shadow(0 0 8px rgba(99, 102, 241, 0.5));
 }
 
-/* --- LADO DIREITO: IMAGEM E TECNOLOGIAS --- */
+/* LADO DIREITO: IMAGEM E TECNOLOGIAS */
 .home-image-container {
   display: flex;
-  flex-direction: column; /* Coloca techs embaixo da imagem */
+  flex-direction: column; /* Techs embaixo da imagem */
   justify-content: center;
   align-items: center;
-  gap: 35px; /* Espaço entre a imagem e as techs */
+  gap: 35px; 
 }
 
-/* Wrapper para manter o card flutuante preso à imagem */
 .image-wrapper {
   position: relative;
   display: flex;
@@ -308,10 +312,10 @@ strong {
   z-index: 2;
 }
 
-/* --- TECNOLOGIAS EM LINHA --- */
+/* TECNOLOGIAS EM LINHA */
 .tech-list {
   display: flex;
-  flex-wrap: wrap; /* Quebra linha se necessário */
+  flex-wrap: wrap;
   justify-content: center;
   gap: 12px;
   max-width: 480px;
@@ -323,7 +327,7 @@ strong {
   border: 1px solid rgba(99, 102, 241, 0.2);
   color: #e2e8f0;
   padding: 8px 16px;
-  border-radius: 50px; /* Pílula completa */
+  border-radius: 50px;
   font-size: 0.85rem;
   font-family: 'Orbitron', sans-serif;
   letter-spacing: 0.5px;
@@ -334,7 +338,7 @@ strong {
   will-change: transform;
 }
 
-/* --- ANIMAÇÕES --- */
+/* ANIMAÇÕES */
 @keyframes blob-animation {
   0% { border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%; }
   100% { border-radius: 50% 50% 30% 70% / 50% 60% 40% 50%; }
@@ -393,7 +397,7 @@ strong {
   opacity: 0.5;
 }
 
-/* --- RESPONSIVIDADE --- */
+/* RESPONSIVIDADE */
 @media (max-width: 1024px) {
   .home-content h1 { font-size: 3rem; }
   .image-border { width: 320px; height: 320px; }
