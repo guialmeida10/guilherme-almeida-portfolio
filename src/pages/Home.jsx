@@ -79,7 +79,7 @@ export default function Home() {
               animate={{ y: [0, -15, 0] }}
               transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
             >
-              <span>💻 +15 Projetos</span>
+              <span>💻⚡🎮🎯🤖</span>
             </motion.div>
           </div>
 
