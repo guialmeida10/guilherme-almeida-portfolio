@@ -25,7 +25,7 @@ export default function About() {
       description: "Manutenção de computadores, incluindo formatação, instalação de sistemas operacionais, configuração de redes e reparos de hardwares, por conta própria."
     },
     {
-      title: "Vice-Diretor de Comunicação",
+      title: "Diretor de Comunicação",
       company: "CAECOMP - UEMG",
       period: "Jul 2025 - Atualmente",
       description: "Criação de materiais visuais e planejamento estratégico de comunicação para o Centro Acadêmico do curso de Engenharia da Computação."
